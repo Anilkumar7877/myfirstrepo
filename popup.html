@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Theme</title>
+    <style>
+      body {
+        width: 200px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input[type="color"], select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cool Theme</h1>
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor" name="bgColor" value="#2c3e50">
+    
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor" name="fontColor" value="#ecf0f1">
+    
+    <label for="fontFamily">Font Family:</label>
+    <select id="fontFamily" name="fontFamily">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Helvetica, sans-serif">Helvetica</option>
+      <option value="Courier New, monospace">Courier New</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+    </select>
+    
+    <button id="applyTheme">Apply Theme</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
